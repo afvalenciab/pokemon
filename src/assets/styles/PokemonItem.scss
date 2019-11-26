@@ -1,0 +1,22 @@
+
+.pokemon--item {
+  display: grid;
+  grid-template-rows: 80px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #EDEAEA;
+
+  figure {
+    margin: 0;
+    img {
+      width: 40px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+}
