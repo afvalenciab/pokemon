@@ -24,5 +24,7 @@
   .pokemon--list-content {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 320px);
+    overflow: auto;
   }
 }

@@ -1,8 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PokemonItem from './PokemonItem';
 import '../assets/styles/PokemonList.scss';
 
-const PokemonList = () => {
+const PokemonList = (props) => {
+  const { pokemonList, searchingList } = props;
+
   return (
     <div className='pokemon--list'>
       <div className='pokemon--list-title'>
@@ -13,11 +16,25 @@ const PokemonList = () => {
         <p>Weight</p>
       </div>
       <div className='pokemon--list-content'>
-        <PokemonItem />
-        <PokemonItem />
+        {searchingList &&
+          searchingList.map((item, index) => (
+            <PokemonItem key={index} {...item} />
+          ))}
+
+        {!searchingList &&
+          pokemonList.map((item, index) => (
+            <PokemonItem key={index} {...item} />
+          ))}
       </div>
     </div>
   );
 };
 
-export default PokemonList;
+const mapStateToProps = (state) => {
+  return {
+    pokemonList: state.pokemonList,
+    searchingList: state.searchingList,
+  };
+};
+
+export default connect(mapStateToProps, null)(PokemonList);

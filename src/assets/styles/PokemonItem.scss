@@ -7,16 +7,21 @@
   align-items: center;
   justify-items: center;
   border-bottom: 1px solid #EDEAEA;
+  cursor: pointer;
 
   figure {
     margin: 0;
     img {
-      width: 40px;
+      width: 70px;
     }
   }
 
   p {
     margin: 0;
   }
+}
 
+.active {
+  background: rgba(0,0,0,0.4);
+  border-radius: 5px;
 }
