@@ -12,3 +12,10 @@ body {
   padding: 25px;
   background: #F8F8FA;
 }
+
+@media screen and (max-width: 500px) {
+  .home--container {
+    grid-template: 80px calc(100vh - 125px) / minmax(320px, 1fr);
+    padding: 10px 5px;
+  }
+}

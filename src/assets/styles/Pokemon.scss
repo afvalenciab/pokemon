@@ -14,3 +14,9 @@
     color: #796EF0;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .pokemon--container {
+    padding: 10px;
+  }
+}

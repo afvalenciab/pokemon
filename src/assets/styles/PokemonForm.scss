@@ -59,3 +59,30 @@
     } 
   }
 }
+
+@media screen and (max-width: 730px) {
+  .pokemon--form {
+    .pokemon--form-options {
+      flex-direction: column;
+      justify-content: center;
+  
+      figure {
+        top: 6px;
+      }
+  
+      .search--input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      
+      .buttons--container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .button {
+          width: calc(50% - 20px);
+        }
+      }
+    }
+  }
+}

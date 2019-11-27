@@ -28,3 +28,9 @@
     overflow: auto;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .pokemon--list {
+    font-size: 12px;
+  }
+}

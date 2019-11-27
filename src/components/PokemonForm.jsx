@@ -33,7 +33,7 @@ const PokemonForm = (props) => {
           placeholder='Search by Name'
           onChange={handleChangeInput}
         />
-        <div>
+        <div className='buttons--container'>
           <button className='button more' type='button' onClick={handleLoadMorePokemons}>
             More Pokémons
           </button>
