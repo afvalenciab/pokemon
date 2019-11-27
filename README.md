@@ -130,7 +130,7 @@ The folder '/components'  has several web components that they were built with a
 The file 'actions/index.js' has the list of actions that we want to execute and his responsibility is to communicate the action and to give the data.
 
 * /action
- - index.js
+  - index.js
 
 In this file, I used a 'redux-thunk' library to use it such a middleware to execute another task and later dispatch the action that changes the state.
 
@@ -191,7 +191,7 @@ const App = (props) => {
     }
   }, []);
 
-  ....
+  ...
 };
 
 ...
