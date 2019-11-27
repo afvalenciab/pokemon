@@ -1,0 +1,22 @@
+
+.pokemon--container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    width: fit-content;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #796EF0;
+    color: #796EF0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pokemon--container {
+    padding: 10px;
+  }
+}
