@@ -1,12 +1,12 @@
 # Pokémon View
-This project allows you interactive with the Pokemon world.
+This project allows you to interact with the Pokemon world.
 
-Check the application in the following link:
+Check the application in the link below:
 [pokemon-view.web.app/](https://pokemon-view.web.app/)
 
-* You can list the Pokémons and see the picture, id, Name, Type, Weight.
-* You can load more Pokémons doing click in "More Pokémos", this option will load 20 Pokémons more.
-* You can delete one or more than one, you just need to select the Pokémon with one click then click in the button "Delete Pokémon". If you want to unselect a Pokémon you can click again on the Pokémon.
+* You can see the Pokémons list with their picture, id, Name, Type and Weight.
+* You can load more Pokémons pressing click in "More Pokémons", this option will load 20 more Pokémons.
+* You can delete one or more Pokémons, you just need to select the Pokémon with one click then click in the button "Delete Pokémon". If you want to unselect a Pokémon you can click again on the Pokémon.
 * You can filter the list and search any Pokémon as long as the Pokémon is in the charged list.
 * This app is available on mobile devices.
 
@@ -24,13 +24,13 @@ Check the application in the following link:
 
 # Documentation 
 
-### Installation
+### Install
 
 ```
 npm install
 ```
 
-If you have any problem installing dependencies you can execute the following script:
+If you have any problem during install dependencies you can execute the script below:
 
 ```
 npm install --unsafe-perm
@@ -48,34 +48,34 @@ npm run dev
 npm run build
 ```
 
-### Tets
+### Test
 
 ```
 npm run test
 ```
 
-## Notes about project
+## Notes about the project
 
 ### How I would improve the project
 
 I would improve the project with the following features:
 
-* Using service workers to be available without the internet.
-* Using an infinite scroll pattern to load Pokémons while we doing scroll.
-* Using cache for the information.
-* Using Server Side Render to load the page quickly.
-* Adding more test cases to ensure the quality in the static code.
+* Service workers to be available offline.
+* Infinite scroll pattern to load Pokémons while we scroll the page.
+* Cache for the information.
+* Server Side Render to load the page quickly.
+* Adding more test cases to ensure the quality in static code.
 
 ### Future plans for the project
 
 * Add a detail page to see more information about each Pokémon.
 * Add a favorites page to create a custom list of Pokémons.
-* Add a login/register feature to save the favorite Pokémons.
-* Add a CRUD module to create  our own Pokémons.
+* Add a login/register feature to save favorite Pokémons.
+* Add a CRUD module to create our own Pokémons.
 
 ### If I weren't able to finish all the goals, how would I go out executing them?
 
-I would develop the main goals. To decide the main goals, I would evaluate what are the most important features that create value to the customers. It's important to focus goals per day and try to complete this schedule with a little bit of effort. Another approach is to evaluate what features we can get with an existing library and save time. Also with the team, we can decide to decrease the percent of the test and just make tests for the critical path.
+I would develop the main goals. To decide the main goals, I would evaluate what are the most important features that create value to the customers. It's important to be focused on goals per day and try to complete this schedule with a little bit effort. Another approach is to evaluate what features we can get with an existing library and save time. Also with the team, we can decide to decrease the percent of the test and just make tests for the critical path.
 
 ### Explanation of the project
 
@@ -88,7 +88,7 @@ The architecture used was Flux with the Redux implementation. In this architectu
 #### View (React)
 The view is the web components that are in the following folders:
 
-The /containers/Home.jsx is the global page that contains the main components. The Home container was built with this structure because if we need to add another component, we can do that the easy way putting it below the <Pokemon /> component. This es a declarative way to create components.
+'/containers/Home.jsx' is the global page that contains the main components. The Home container was built with this structure because if we need to add another component, we can do that by the easy way putting it below the <Pokemon /> component. This is a declarative way to create components.
 
 * /containers
   - Home.jsx
@@ -100,7 +100,7 @@ The /containers/Home.jsx is the global page that contains the main components. T
 </main>
 ```
 
-The folder '/components'  has several web components that they were built with a specific responsibility. This way each component is reusable.
+The folder '/components' has several web components that were built with a specific responsibility. This way each component is reusable.
 
 * /components
   - Header.jsx
@@ -127,7 +127,7 @@ The folder '/components'  has several web components that they were built with a
 
 #### Actions
 
-The file 'actions/index.js' has the list of actions that we want to execute and his responsibility is to communicate the action and to give the data.
+The file 'actions/index.js' has the list of actions that we want to execute and its responsibility is to communicate the action and to give the data.
 
 * /action
   - index.js
